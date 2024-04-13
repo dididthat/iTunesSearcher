@@ -16,6 +16,6 @@ final class AppCoordinator {
     
     func start() {
         let flow = SearchFlowFactory().searchFlow()
-        navigationController?.pushViewController(flow, animated: true)
+        navigationController?.viewControllers = [flow]
     }
 }
