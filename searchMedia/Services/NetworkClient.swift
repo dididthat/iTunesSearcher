@@ -56,7 +56,7 @@ private struct NetworkMethodToStringConverter {
     }
 }
 
-struct ConvertDictionaryToQuery {
+private struct ConvertDictionaryToQuery {
     func convert(from value: NetworkMethod) -> [URLQueryItem] {
         switch value {
         case .getWithQueryParams(let dictionary):

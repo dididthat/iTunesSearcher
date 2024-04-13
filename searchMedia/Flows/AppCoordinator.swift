@@ -15,7 +15,19 @@ final class AppCoordinator {
     }
     
     func start() {
-        let flow = SearchFlowFactory().searchFlow()
+        let flow = SearchFlowFactory().searchFlow(navigationDelegate: self)
         navigationController?.viewControllers = [flow]
+    }
+}
+
+// MARK: - SearchPresenterNavigationDelegate
+extension AppCoordinator: SearchPresenterNavigationDelegate {
+    func searchDetailsPresenterDidRequestOpenDetailsFlow(
+        _ presenter: SearchPresenter,
+        viewModel: SearchDetailsViewModel,
+        imagesProvider: ImagesProvider
+    ) {
+        let flow = SearchDetailsFlowFactory().searchDetailsFlow(viewModel: viewModel, imagesProvider: imagesProvider)
+        navigationController?.pushViewController(flow, animated: true)
     }
 }

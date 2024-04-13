@@ -39,6 +39,7 @@ final class SearchCollectionViewCell: UICollectionViewCell {
         label.textColor = .black
         label.font = UIFont.boldSystemFont(ofSize: 15)
         label.textAlignment = .left
+        label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -52,7 +53,7 @@ final class SearchCollectionViewCell: UICollectionViewCell {
         return label
     }()
     
-    private let dateLabel: UILabel = {
+    private let extraTextLabel: UILabel = {
         let label = UILabel()
         label.textColor = .gray
         label.font = UIFont.systemFont(ofSize: 15)
@@ -60,16 +61,16 @@ final class SearchCollectionViewCell: UICollectionViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
-   
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
-       
+        
         backgroundColor = .clear
         contentView.addSubview(imageView)
         contentView.addSubview(titleLabel)
         contentView.addSubview(subtitleLabel)
         contentView.addSubview(release)
-        contentView.addSubview(dateLabel)
+        contentView.addSubview(extraTextLabel)
         
         NSLayoutConstraint.activate([
             imageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
@@ -89,10 +90,10 @@ final class SearchCollectionViewCell: UICollectionViewCell {
             release.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             release.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
             
-            dateLabel.topAnchor.constraint(equalTo: release.bottomAnchor, constant: 4),
-            dateLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-            dateLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            dateLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
+            extraTextLabel.topAnchor.constraint(equalTo: release.bottomAnchor, constant: 4),
+            extraTextLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            extraTextLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+            extraTextLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
         ])
     }
     
@@ -107,12 +108,13 @@ final class SearchCollectionViewCell: UICollectionViewCell {
         titleLabel.text = nil
         subtitleLabel.text = nil
         release.text = nil
-        dateLabel.text = nil
+        extraTextLabel.text = nil
     }
     
     func configure(with viewModel: SearchResultItem) {
         titleLabel.text = viewModel.artistName
         subtitleLabel.text = viewModel.trackName ?? viewModel.collectionName
         release.text = viewModel.releaseDate?.formatted()
+        extraTextLabel.text = viewModel.kind ?? viewModel.wrapperType
     }
 }

@@ -15,9 +15,11 @@ enum SearchFlowState {
 protocol SearchFlowInput: AnyObject {
     func switchState(to state: SearchFlowState)
     func reloadData()
+    func setupSearchText(_ text: String)
+    func changeErrorVisibility(for isShown: Bool)
 }
 
-final class SearchViewController: UIViewController {    
+final class SearchViewController: UIViewController {
     private let output: SearchFlowOutput
     
     private lazy var collectionView: UICollectionView = {
@@ -33,9 +35,33 @@ final class SearchViewController: UIViewController {
             HistoryCollectionViewCell.self,
             forCellWithReuseIdentifier: HistoryCollectionViewCell.indentifire
         )
+        collectionView.register(
+            SkeletonCollectionViewCell.self,
+            forCellWithReuseIdentifier: SkeletonCollectionViewCell.indentifire
+        )
         collectionView.dataSource = self
         collectionView.delegate = self
         return collectionView
+    }()
+    
+    private let errorImageView: UIImageView = {
+        let errorImageView = UIImageView()
+        errorImageView.image = UIImage(named: "error")
+        errorImageView.translatesAutoresizingMaskIntoConstraints = false
+        errorImageView.isHidden = true
+        errorImageView.contentMode = .scaleAspectFit
+        return errorImageView
+    }()
+    
+    private let errorLabel: UILabel = {
+        let errorLabel = UILabel()
+        errorLabel.textColor = .red
+        errorLabel.font = UIFont.boldSystemFont(ofSize: 20)
+        errorLabel.textAlignment = .center
+        errorLabel.text = "Please try again"
+        errorLabel.translatesAutoresizingMaskIntoConstraints = false
+        errorLabel.isHidden = true
+        return errorLabel
     }()
     
     init(output: SearchFlowOutput) {
@@ -49,30 +75,39 @@ final class SearchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        view.backgroundColor = .white
+        
         view.addSubview(collectionView)
+        view.addSubview(errorImageView)
+        view.addSubview(errorLabel)
         
         NSLayoutConstraint.activate([
-                    collectionView.topAnchor.constraint(equalTo: view.topAnchor),
-                    view.bottomAnchor.constraint(equalTo: collectionView.bottomAnchor),
-                    view.trailingAnchor.constraint(equalTo: collectionView.trailingAnchor),
-                    collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-                ])
+            collectionView.topAnchor.constraint(equalTo: view.topAnchor),
+            view.bottomAnchor.constraint(equalTo: collectionView.bottomAnchor),
+            view.trailingAnchor.constraint(equalTo: collectionView.trailingAnchor),
+            collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            
+            errorImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            errorImageView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            errorImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
+            view.trailingAnchor.constraint(equalTo: errorImageView.trailingAnchor, constant: 50),
+            
+            errorLabel.topAnchor.constraint(equalTo: errorImageView.bottomAnchor),
+            errorLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            errorLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
+            view.trailingAnchor.constraint(equalTo: errorLabel.trailingAnchor, constant: 50),
+        ])
         
         let searchController = UISearchController(searchResultsController: nil)
         searchController.searchResultsUpdater = self
         searchController.searchBar.autocapitalizationType = .none
         searchController.searchBar.searchTextField.placeholder = NSLocalizedString("Введите поисковой запрос", comment: "")
         searchController.searchBar.returnKeyType = .done
-        searchController.searchBar.setValue("Назад", forKey: "cancelButtonText")
+        searchController.searchBar.delegate = self
         
         navigationItem.searchController = searchController
-        
         navigationItem.hidesSearchBarWhenScrolling = false
-        
-        searchController.delegate = self
-        
-        searchController.searchBar.delegate = self
     }
     
     private func createLayoutResult() -> UICollectionViewLayout {
@@ -118,6 +153,16 @@ extension SearchViewController: SearchFlowInput {
     func reloadData() {
         collectionView.reloadData()
     }
+    
+    func setupSearchText(_ text: String) {
+        navigationItem.searchController?.searchBar.text = text
+    }
+    
+    func changeErrorVisibility(for isShown: Bool) {
+        errorImageView.isHidden = !isShown
+        errorLabel.isHidden = !isShown
+        collectionView.isHidden = isShown
+    }
 }
 
 // MARK: - UISearchResultsUpdating
@@ -139,15 +184,10 @@ extension SearchViewController: UISearchBarDelegate {
         output.searchBarDidFocus()
         return true
     }
-
+    
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         output.searchBarDidUnfocus()
     }
-}
-
-// MARK: - UISearchControllerDelegate
-extension SearchViewController: UISearchControllerDelegate {
-    
 }
 
 // MARK: - UICollectionViewDataSource
@@ -166,19 +206,21 @@ extension SearchViewController: UICollectionViewDataSource {
         let type = output.data[indexPath.row]
         switch type {
         case .history(let value):
-            return configureHistoryCell(collectionView, cellForItemAt: indexPath, text: value)
+            return configuredHistoryCell(collectionView, cellForItemAt: indexPath, text: value)
         case .result(let value):
-            return configureResultCell(collectionView, cellForItemAt: indexPath, value: value)
+            return configuredResultCell(collectionView, cellForItemAt: indexPath, value: value)
+        case .skeleton:
+            return configuredSkeletonCell(collectionView, cellForItemAt: indexPath)
         }
     }
     
-    func configureHistoryCell(
+    private func configuredHistoryCell(
         _ collectionView: UICollectionView,
         cellForItemAt indexPath: IndexPath,
         text: String
     ) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(
-            withReuseIdentifier: "HistoryCollectionViewCell",
+            withReuseIdentifier: HistoryCollectionViewCell.indentifire,
             for: indexPath
         ) as? HistoryCollectionViewCell
         else {
@@ -188,13 +230,13 @@ extension SearchViewController: UICollectionViewDataSource {
         return cell
     }
     
-    func configureResultCell(
+    private func configuredResultCell(
         _ collectionView: UICollectionView,
         cellForItemAt indexPath: IndexPath,
         value: SearchResultItem
     ) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(
-            withReuseIdentifier: "SearchCollectionViewCell",
+            withReuseIdentifier: SearchCollectionViewCell.indentifire,
             for: indexPath
         ) as? SearchCollectionViewCell
         else {
@@ -206,8 +248,25 @@ extension SearchViewController: UICollectionViewDataSource {
         }
         return cell
     }
+    
+    private func configuredSkeletonCell(
+        _ collectionView: UICollectionView,
+        cellForItemAt indexPath: IndexPath
+    ) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: SkeletonCollectionViewCell.indentifire,
+            for: indexPath
+        ) as? SkeletonCollectionViewCell
+        else {
+            return UICollectionViewCell()
+        }
+        return cell
+    }
 }
 
+// MARK: - UICollectionViewDelegate
 extension SearchViewController: UICollectionViewDelegate {
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        output.didSelectItem(at: indexPath.row)
+    }
 }

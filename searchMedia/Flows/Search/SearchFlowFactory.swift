@@ -8,8 +8,8 @@
 import UIKit
 
 struct SearchFlowFactory {
-    func searchFlow() -> UIViewController {
-        let presenter = SearchPresenter()
+    func searchFlow(navigationDelegate: SearchPresenterNavigationDelegate) -> UIViewController {
+        let presenter = SearchPresenter(navigationDelegate: navigationDelegate)
         let viewController = SearchViewController(output: presenter)
         presenter.input = viewController
         return viewController
