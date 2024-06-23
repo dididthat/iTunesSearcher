@@ -11,7 +11,7 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
     
-    private var appCoordinator: AppCoordinator?
+//    private var : AppCoordinator?
 
     func scene(
         _ scene: UIScene,
@@ -23,11 +23,9 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
         
         let navigationController = UINavigationController()
-        appCoordinator = AppCoordinator(navigationController: navigationController)
-
+        let viewController = SearchMediaAssemblyImpl().module(navigationController: navigationController)
+        navigationController.viewControllers = [viewController]
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
-        
-        appCoordinator?.start()
     }
 }

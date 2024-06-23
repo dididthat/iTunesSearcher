@@ -7,6 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A6A9E072C246094004C5958 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E062C246094004C5958 /* UIView+Extensions.swift */; };
+		0A6A9E102C24C242004C5958 /* SearchMediaDetailsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E0F2C24C242004C5958 /* SearchMediaDetailsAssembly.swift */; };
+		0A6A9E122C24C24C004C5958 /* SearchMediaDetailsAssemblyImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E112C24C24C004C5958 /* SearchMediaDetailsAssemblyImpl.swift */; };
+		0A6A9E142C24C25E004C5958 /* SearchMediaDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E132C24C25E004C5958 /* SearchMediaDetailsInteractor.swift */; };
+		0A6A9E162C24C29F004C5958 /* SearchMediaDetailsInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E152C24C29F004C5958 /* SearchMediaDetailsInteractorImpl.swift */; };
+		0A6A9E182C24C2D3004C5958 /* SearchMediaDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E172C24C2D3004C5958 /* SearchMediaDetailsPresenter.swift */; };
+		0A6A9E1A2C24C2F4004C5958 /* SearchMediaDetailsPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E192C24C2F4004C5958 /* SearchMediaDetailsPresenterImpl.swift */; };
+		0A6A9E1C2C24C303004C5958 /* SearchMediaDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E1B2C24C303004C5958 /* SearchMediaDetailsRouter.swift */; };
+		0A6A9E1E2C24C30F004C5958 /* SearchMediaDetailsRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E1D2C24C30F004C5958 /* SearchMediaDetailsRouterImpl.swift */; };
+		0A6A9E202C24C320004C5958 /* SearchMediaDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E1F2C24C320004C5958 /* SearchMediaDetailsViewController.swift */; };
+		0A6A9E232C24C349004C5958 /* SearchMediaDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E222C24C349004C5958 /* SearchMediaDetailsView.swift */; };
+		0A6A9E252C24C355004C5958 /* SearchMediaDetailsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E242C24C355004C5958 /* SearchMediaDetailsViewInput.swift */; };
+		0A6A9E682C24C6FC004C5958 /* SearchMediaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E592C24C6FC004C5958 /* SearchMediaPresenter.swift */; };
+		0A6A9E702C24C73C004C5958 /* SearchMediaAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E6F2C24C73C004C5958 /* SearchMediaAssembly.swift */; };
+		0A6A9E7F2C24C75D004C5958 /* SearchMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E732C24C75D004C5958 /* SearchMediaViewController.swift */; };
+		0A6A9E822C24C75D004C5958 /* SearchMediaAssemblyImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E762C24C75D004C5958 /* SearchMediaAssemblyImpl.swift */; };
+		0A6A9E832C24C75D004C5958 /* SearchMediaViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E772C24C75D004C5958 /* SearchMediaViewInput.swift */; };
+		0A6A9E862C24C75D004C5958 /* SearchMediaRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E7A2C24C75D004C5958 /* SearchMediaRouter.swift */; };
+		0A6A9E872C24C75D004C5958 /* SearchMediaRouterImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E7B2C24C75D004C5958 /* SearchMediaRouterImp.swift */; };
+		0A6A9E882C24C75D004C5958 /* SearchMediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E7C2C24C75D004C5958 /* SearchMediaView.swift */; };
+		0A6A9E8A2C24C79A004C5958 /* SearchMediaInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E892C24C79A004C5958 /* SearchMediaInteractor.swift */; };
+		0A6A9E8C2C24C7EE004C5958 /* SearchMediaPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E8B2C24C7EE004C5958 /* SearchMediaPresenterImpl.swift */; };
+		0A6A9E8E2C24C959004C5958 /* SearchMediaInteractorImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E8D2C24C959004C5958 /* SearchMediaInteractorImp.swift */; };
+		0A6A9E912C24DA53004C5958 /* Collection + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E902C24DA53004C5958 /* Collection + Extensions.swift */; };
+		0A6A9E932C25761E004C5958 /* SearchState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E922C25761E004C5958 /* SearchState.swift */; };
+		0A6A9ECD2C25A2B8004C5958 /* SearchCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9ECC2C25A2B7004C5958 /* SearchCellType.swift */; };
+		0A6A9ECF2C272F3B004C5958 /* SearchDetailsHyperLinkType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9ECE2C272F3B004C5958 /* SearchDetailsHyperLinkType.swift */; };
 		D23792F72BC6A77200694576 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23792F62BC6A77200694576 /* AppDelegate.swift */; };
 		D23792F92BC6A77200694576 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23792F82BC6A77200694576 /* SceneDelegate.swift */; };
 		D23792FB2BC6A77200694576 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23792FA2BC6A77200694576 /* SearchViewController.swift */; };
@@ -54,6 +81,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A6A9E062C246094004C5958 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		0A6A9E0F2C24C242004C5958 /* SearchMediaDetailsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaDetailsAssembly.swift; sourceTree = "<group>"; };
+		0A6A9E112C24C24C004C5958 /* SearchMediaDetailsAssemblyImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaDetailsAssemblyImpl.swift; sourceTree = "<group>"; };
+		0A6A9E132C24C25E004C5958 /* SearchMediaDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaDetailsInteractor.swift; sourceTree = "<group>"; };
+		0A6A9E152C24C29F004C5958 /* SearchMediaDetailsInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaDetailsInteractorImpl.swift; sourceTree = "<group>"; };
+		0A6A9E172C24C2D3004C5958 /* SearchMediaDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaDetailsPresenter.swift; sourceTree = "<group>"; };
+		0A6A9E192C24C2F4004C5958 /* SearchMediaDetailsPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaDetailsPresenterImpl.swift; sourceTree = "<group>"; };
+		0A6A9E1B2C24C303004C5958 /* SearchMediaDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaDetailsRouter.swift; sourceTree = "<group>"; };
+		0A6A9E1D2C24C30F004C5958 /* SearchMediaDetailsRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaDetailsRouterImpl.swift; sourceTree = "<group>"; };
+		0A6A9E1F2C24C320004C5958 /* SearchMediaDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaDetailsViewController.swift; sourceTree = "<group>"; };
+		0A6A9E222C24C349004C5958 /* SearchMediaDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaDetailsView.swift; sourceTree = "<group>"; };
+		0A6A9E242C24C355004C5958 /* SearchMediaDetailsViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaDetailsViewInput.swift; sourceTree = "<group>"; };
+		0A6A9E592C24C6FC004C5958 /* SearchMediaPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMediaPresenter.swift; sourceTree = "<group>"; };
+		0A6A9E6F2C24C73C004C5958 /* SearchMediaAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchMediaAssembly.swift; path = ../../../../../../.Trash/SearchMediaAssembly.swift; sourceTree = "<group>"; };
+		0A6A9E732C24C75D004C5958 /* SearchMediaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchMediaViewController.swift; path = ../SearchMediaViewController.swift; sourceTree = "<group>"; };
+		0A6A9E762C24C75D004C5958 /* SearchMediaAssemblyImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMediaAssemblyImpl.swift; sourceTree = "<group>"; };
+		0A6A9E772C24C75D004C5958 /* SearchMediaViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchMediaViewInput.swift; path = ../SearchMediaViewInput.swift; sourceTree = "<group>"; };
+		0A6A9E7A2C24C75D004C5958 /* SearchMediaRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchMediaRouter.swift; path = ../SearchMediaRouter.swift; sourceTree = "<group>"; };
+		0A6A9E7B2C24C75D004C5958 /* SearchMediaRouterImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchMediaRouterImp.swift; path = ../SearchMediaRouterImp.swift; sourceTree = "<group>"; };
+		0A6A9E7C2C24C75D004C5958 /* SearchMediaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchMediaView.swift; path = ../SearchMediaView.swift; sourceTree = "<group>"; };
+		0A6A9E892C24C79A004C5958 /* SearchMediaInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchMediaInteractor.swift; path = ../../../../../../.Trash/SearchMediaInteractor.swift; sourceTree = "<group>"; };
+		0A6A9E8B2C24C7EE004C5958 /* SearchMediaPresenterImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchMediaPresenterImpl.swift; path = ../../../../../../.Trash/SearchMediaPresenterImpl.swift; sourceTree = "<group>"; };
+		0A6A9E8D2C24C959004C5958 /* SearchMediaInteractorImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMediaInteractorImp.swift; sourceTree = "<group>"; };
+		0A6A9E902C24DA53004C5958 /* Collection + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection + Extensions.swift"; sourceTree = "<group>"; };
+		0A6A9E922C25761E004C5958 /* SearchState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchState.swift; sourceTree = "<group>"; };
+		0A6A9ECC2C25A2B7004C5958 /* SearchCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCellType.swift; sourceTree = "<group>"; };
+		0A6A9ECE2C272F3B004C5958 /* SearchDetailsHyperLinkType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetailsHyperLinkType.swift; sourceTree = "<group>"; };
 		D23792F32BC6A77200694576 /* searchMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = searchMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D23792F62BC6A77200694576 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D23792F82BC6A77200694576 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,10 +166,156 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A6A9E002C245F23004C5958 /* UIKitAdditions */ = {
+			isa = PBXGroup;
+			children = (
+				0A6A9E062C246094004C5958 /* UIView+Extensions.swift */,
+				0A6A9E902C24DA53004C5958 /* Collection + Extensions.swift */,
+			);
+			path = UIKitAdditions;
+			sourceTree = "<group>";
+		};
+		0A6A9E082C24C1D9004C5958 /* searchMediaDetails */ = {
+			isa = PBXGroup;
+			children = (
+				D2FEDF142BCAC8AC003529B3 /* SearchDetailsFlowDependenciesContainer.swift */,
+				D2FEDF062BCAC6AE003529B3 /* Domain */,
+				0A6A9E0D2C24C213004C5958 /* Assembly */,
+				0A6A9E0C2C24C208004C5958 /* Interactor */,
+				0A6A9E0B2C24C200004C5958 /* Presenter */,
+				0A6A9E0A2C24C1F7004C5958 /* Router */,
+				0A6A9E092C24C1EE004C5958 /* View */,
+				D2FEDF0B2BCAC7AC003529B3 /* SAL */,
+				0A6A9ECE2C272F3B004C5958 /* SearchDetailsHyperLinkType.swift */,
+			);
+			path = searchMediaDetails;
+			sourceTree = "<group>";
+		};
+		0A6A9E092C24C1EE004C5958 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A6A9E1F2C24C320004C5958 /* SearchMediaDetailsViewController.swift */,
+				0A6A9E222C24C349004C5958 /* SearchMediaDetailsView.swift */,
+				0A6A9E242C24C355004C5958 /* SearchMediaDetailsViewInput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A6A9E0A2C24C1F7004C5958 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0A6A9E1B2C24C303004C5958 /* SearchMediaDetailsRouter.swift */,
+				0A6A9E1D2C24C30F004C5958 /* SearchMediaDetailsRouterImpl.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		0A6A9E0B2C24C200004C5958 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0A6A9E172C24C2D3004C5958 /* SearchMediaDetailsPresenter.swift */,
+				0A6A9E192C24C2F4004C5958 /* SearchMediaDetailsPresenterImpl.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0A6A9E0C2C24C208004C5958 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				0A6A9E132C24C25E004C5958 /* SearchMediaDetailsInteractor.swift */,
+				0A6A9E152C24C29F004C5958 /* SearchMediaDetailsInteractorImpl.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		0A6A9E0D2C24C213004C5958 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				0A6A9E0F2C24C242004C5958 /* SearchMediaDetailsAssembly.swift */,
+				0A6A9E112C24C24C004C5958 /* SearchMediaDetailsAssemblyImpl.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		0A6A9E0E2C24C227004C5958 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				0A6A9E082C24C1D9004C5958 /* searchMediaDetails */,
+				D23792F52BC6A77200694576 /* searchMedia */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		0A6A9E532C24C6FB004C5958 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				0A6A9E762C24C75D004C5958 /* SearchMediaAssemblyImpl.swift */,
+				0A6A9E6F2C24C73C004C5958 /* SearchMediaAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		0A6A9E582C24C6FC004C5958 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				0A6A9E8D2C24C959004C5958 /* SearchMediaInteractorImp.swift */,
+				0A6A9E892C24C79A004C5958 /* SearchMediaInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		0A6A9E5B2C24C6FC004C5958 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0A6A9E8B2C24C7EE004C5958 /* SearchMediaPresenterImpl.swift */,
+				0A6A9E592C24C6FC004C5958 /* SearchMediaPresenter.swift */,
+				0A6A9ECC2C25A2B7004C5958 /* SearchCellType.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0A6A9E5E2C24C6FC004C5958 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0A6A9E7A2C24C75D004C5958 /* SearchMediaRouter.swift */,
+				0A6A9E7B2C24C75D004C5958 /* SearchMediaRouterImp.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		0A6A9E622C24C6FC004C5958 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A6A9E8F2C24C9A6004C5958 /* Cells */,
+				0A6A9E772C24C75D004C5958 /* SearchMediaViewInput.swift */,
+				0A6A9E7C2C24C75D004C5958 /* SearchMediaView.swift */,
+				0A6A9E732C24C75D004C5958 /* SearchMediaViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A6A9E8F2C24C9A6004C5958 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D2FEDEF32BC7F7A2003529B3 /* SearchCollectionViewCell.swift */,
+				D2FEDEF62BC7FA17003529B3 /* HistoryCollectionViewCell.swift */,
+				D2FEDF162BCAF009003529B3 /* SkeletonCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		D23792EA2BC6A77200694576 = {
 			isa = PBXGroup;
 			children = (
-				D23792F52BC6A77200694576 /* searchMedia */,
+				D23793042BC6A77300694576 /* Info.plist */,
+				D23792F82BC6A77200694576 /* SceneDelegate.swift */,
+				D23792F62BC6A77200694576 /* AppDelegate.swift */,
+				D2FEDEF82BC95344003529B3 /* Services */,
+				0A6A9E0E2C24C227004C5958 /* Modules */,
+				D23793262BC6A85700694576 /* Flows */,
+				D23792FF2BC6A77300694576 /* Assets.xcassets */,
+				D23793012BC6A77300694576 /* LaunchScreen.storyboard */,
+				0A6A9E002C245F23004C5958 /* UIKitAdditions */,
 				D237930C2BC6A77300694576 /* searchMediaTests */,
 				D23793162BC6A77300694576 /* searchMediaUITests */,
 				D23792F42BC6A77200694576 /* Products */,
@@ -135,11 +335,12 @@
 		D23792F52BC6A77200694576 /* searchMedia */ = {
 			isa = PBXGroup;
 			children = (
-				D23793262BC6A85700694576 /* Flows */,
-				D2FEDEF82BC95344003529B3 /* Services */,
-				D23792FF2BC6A77300694576 /* Assets.xcassets */,
-				D23793012BC6A77300694576 /* LaunchScreen.storyboard */,
-				D23793042BC6A77300694576 /* Info.plist */,
+				0A6A9E532C24C6FB004C5958 /* Assembly */,
+				0A6A9E582C24C6FC004C5958 /* Interactor */,
+				0A6A9E5B2C24C6FC004C5958 /* Presenter */,
+				0A6A9E5E2C24C6FC004C5958 /* Router */,
+				0A6A9E622C24C6FC004C5958 /* View */,
+				D2FEDEFD2BC998DC003529B3 /* SAL */,
 			);
 			path = searchMedia;
 			sourceTree = "<group>";
@@ -164,9 +365,7 @@
 		D23793262BC6A85700694576 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
-				D23792F62BC6A77200694576 /* AppDelegate.swift */,
 				D237932E2BC6B4EE00694576 /* AppCoordinator.swift */,
-				D23792F82BC6A77200694576 /* SceneDelegate.swift */,
 				D23793272BC6A86A00694576 /* Search */,
 				D23793282BC6A8E300694576 /* SearchDetails */,
 			);
@@ -176,7 +375,6 @@
 		D23793272BC6A86A00694576 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				D2FEDEFD2BC998DC003529B3 /* SAL */,
 				D2FEDEF52BC7F9F8003529B3 /* UI */,
 				D23792FA2BC6A77200694576 /* SearchViewController.swift */,
 				D23793292BC6B39B00694576 /* SearchPresenter.swift */,
@@ -188,12 +386,9 @@
 		D23793282BC6A8E300694576 /* SearchDetails */ = {
 			isa = PBXGroup;
 			children = (
-				D2FEDF0B2BCAC7AC003529B3 /* SAL */,
-				D2FEDF062BCAC6AE003529B3 /* Domain */,
 				D2FEDF042BCAC626003529B3 /* SearchDetailsViewController.swift */,
 				D2FEDF072BCAC6C5003529B3 /* SearchDetailsPresenter.swift */,
 				D2FEDF122BCAC88B003529B3 /* SearchDetailsFlowFactory.swift */,
-				D2FEDF142BCAC8AC003529B3 /* SearchDetailsFlowDependenciesContainer.swift */,
 			);
 			path = SearchDetails;
 			sourceTree = "<group>";
@@ -201,9 +396,6 @@
 		D2FEDEF52BC7F9F8003529B3 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				D2FEDEF32BC7F7A2003529B3 /* SearchCollectionViewCell.swift */,
-				D2FEDEF62BC7FA17003529B3 /* HistoryCollectionViewCell.swift */,
-				D2FEDF162BCAF009003529B3 /* SkeletonCollectionViewCell.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -241,6 +433,7 @@
 			children = (
 				D2FEDF0C2BCAC7C7003529B3 /* SearchDetailsDTO.swift */,
 				D2FEDF0E2BCAC7D1003529B3 /* SearchDetailsDTOToDomainConverter.swift */,
+				0A6A9E922C25761E004C5958 /* SearchState.swift */,
 			);
 			path = SAL;
 			sourceTree = "<group>";
@@ -375,26 +568,53 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A6A9E8E2C24C959004C5958 /* SearchMediaInteractorImp.swift in Sources */,
+				0A6A9E142C24C25E004C5958 /* SearchMediaDetailsInteractor.swift in Sources */,
+				0A6A9E912C24DA53004C5958 /* Collection + Extensions.swift in Sources */,
+				0A6A9ECF2C272F3B004C5958 /* SearchDetailsHyperLinkType.swift in Sources */,
+				0A6A9E162C24C29F004C5958 /* SearchMediaDetailsInteractorImpl.swift in Sources */,
 				D2FEDEFF2BC998FE003529B3 /* SearchResult.swift in Sources */,
 				D237932F2BC6B4EE00694576 /* AppCoordinator.swift in Sources */,
+				0A6A9E1A2C24C2F4004C5958 /* SearchMediaDetailsPresenterImpl.swift in Sources */,
 				D2FEDEFC2BC95398003529B3 /* NetworkClient.swift in Sources */,
+				0A6A9E862C24C75D004C5958 /* SearchMediaRouter.swift in Sources */,
 				D2FEDF052BCAC626003529B3 /* SearchDetailsViewController.swift in Sources */,
+				0A6A9E072C246094004C5958 /* UIView+Extensions.swift in Sources */,
 				D23792FB2BC6A77200694576 /* SearchViewController.swift in Sources */,
+				0A6A9E832C24C75D004C5958 /* SearchMediaViewInput.swift in Sources */,
+				0A6A9E252C24C355004C5958 /* SearchMediaDetailsViewInput.swift in Sources */,
+				0A6A9E8C2C24C7EE004C5958 /* SearchMediaPresenterImpl.swift in Sources */,
+				0A6A9E932C25761E004C5958 /* SearchState.swift in Sources */,
 				D2FEDF0D2BCAC7C7003529B3 /* SearchDetailsDTO.swift in Sources */,
+				0A6A9E682C24C6FC004C5958 /* SearchMediaPresenter.swift in Sources */,
+				0A6A9E882C24C75D004C5958 /* SearchMediaView.swift in Sources */,
+				0A6A9E872C24C75D004C5958 /* SearchMediaRouterImp.swift in Sources */,
 				D2FEDF172BCAF009003529B3 /* SkeletonCollectionViewCell.swift in Sources */,
 				D2FEDEFA2BC95368003529B3 /* NetworkAPI.swift in Sources */,
+				0A6A9E182C24C2D3004C5958 /* SearchMediaDetailsPresenter.swift in Sources */,
 				D2FEDF0F2BCAC7D1003529B3 /* SearchDetailsDTOToDomainConverter.swift in Sources */,
 				D23792F72BC6A77200694576 /* AppDelegate.swift in Sources */,
 				D2FEDF132BCAC88B003529B3 /* SearchDetailsFlowFactory.swift in Sources */,
+				0A6A9E102C24C242004C5958 /* SearchMediaDetailsAssembly.swift in Sources */,
+				0A6A9E1E2C24C30F004C5958 /* SearchMediaDetailsRouterImpl.swift in Sources */,
 				D2FEDEF72BC7FA17003529B3 /* HistoryCollectionViewCell.swift in Sources */,
+				0A6A9E1C2C24C303004C5958 /* SearchMediaDetailsRouter.swift in Sources */,
+				0A6A9E122C24C24C004C5958 /* SearchMediaDetailsAssemblyImpl.swift in Sources */,
 				D2FEDF152BCAC8AC003529B3 /* SearchDetailsFlowDependenciesContainer.swift in Sources */,
+				0A6A9E202C24C320004C5958 /* SearchMediaDetailsViewController.swift in Sources */,
+				0A6A9E232C24C349004C5958 /* SearchMediaDetailsView.swift in Sources */,
 				D2FEDF012BC999B0003529B3 /* SearchParams.swift in Sources */,
 				D2FEDF112BCAC80B003529B3 /* SearchDetailsDomainModel.swift in Sources */,
+				0A6A9E8A2C24C79A004C5958 /* SearchMediaInteractor.swift in Sources */,
 				D237932A2BC6B39B00694576 /* SearchPresenter.swift in Sources */,
 				D237932D2BC6B47E00694576 /* SearchFlowFactory.swift in Sources */,
 				D2FEDF082BCAC6C5003529B3 /* SearchDetailsPresenter.swift in Sources */,
+				0A6A9E702C24C73C004C5958 /* SearchMediaAssembly.swift in Sources */,
 				D2FEDEF42BC7F7A2003529B3 /* SearchCollectionViewCell.swift in Sources */,
+				0A6A9E7F2C24C75D004C5958 /* SearchMediaViewController.swift in Sources */,
+				0A6A9E822C24C75D004C5958 /* SearchMediaAssemblyImpl.swift in Sources */,
 				D2FEDF032BC9BC35003529B3 /* ImagesProvider.swift in Sources */,
+				0A6A9ECD2C25A2B8004C5958 /* SearchCellType.swift in Sources */,
 				D23792F92BC6A77200694576 /* SceneDelegate.swift in Sources */,
 				D2FEDF0A2BCAC70A003529B3 /* SearchDetailsViewModel.swift in Sources */,
 			);
@@ -496,6 +716,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -553,6 +774,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -572,7 +794,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QSU92QZVC6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = searchMedia/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = iTunesSearcher;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -605,7 +827,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QSU92QZVC6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = searchMedia/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = iTunesSearcher;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
