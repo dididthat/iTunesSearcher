@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0A1A7CE02C294C5A00AEED4A /* SearchMediaRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1A7CDF2C294C5A00AEED4A /* SearchMediaRouter.swift */; };
 		0A1A7CE22C294C6600AEED4A /* SearchMediaRouterImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1A7CE12C294C6600AEED4A /* SearchMediaRouterImp.swift */; };
+		0A1A7CE42C294CD200AEED4A /* SearchMediaAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1A7CE32C294CD200AEED4A /* SearchMediaAssembly.swift */; };
+		0A1A7CE62C294CE300AEED4A /* SearchMediaInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1A7CE52C294CE300AEED4A /* SearchMediaInteractor.swift */; };
+		0A1A7CE82C294CF600AEED4A /* SearchMediaPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1A7CE72C294CF600AEED4A /* SearchMediaPresenterImpl.swift */; };
 		0A6A9E072C246094004C5958 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E062C246094004C5958 /* UIView+Extensions.swift */; };
 		0A6A9E102C24C242004C5958 /* SearchMediaDetailsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E0F2C24C242004C5958 /* SearchMediaDetailsAssembly.swift */; };
 		0A6A9E122C24C24C004C5958 /* SearchMediaDetailsAssemblyImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E112C24C24C004C5958 /* SearchMediaDetailsAssemblyImpl.swift */; };
@@ -22,13 +25,10 @@
 		0A6A9E232C24C349004C5958 /* SearchMediaDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E222C24C349004C5958 /* SearchMediaDetailsView.swift */; };
 		0A6A9E252C24C355004C5958 /* SearchMediaDetailsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E242C24C355004C5958 /* SearchMediaDetailsViewInput.swift */; };
 		0A6A9E682C24C6FC004C5958 /* SearchMediaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E592C24C6FC004C5958 /* SearchMediaPresenter.swift */; };
-		0A6A9E702C24C73C004C5958 /* SearchMediaAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E6F2C24C73C004C5958 /* SearchMediaAssembly.swift */; };
 		0A6A9E7F2C24C75D004C5958 /* SearchMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E732C24C75D004C5958 /* SearchMediaViewController.swift */; };
 		0A6A9E822C24C75D004C5958 /* SearchMediaAssemblyImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E762C24C75D004C5958 /* SearchMediaAssemblyImpl.swift */; };
 		0A6A9E832C24C75D004C5958 /* SearchMediaViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E772C24C75D004C5958 /* SearchMediaViewInput.swift */; };
 		0A6A9E882C24C75D004C5958 /* SearchMediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E7C2C24C75D004C5958 /* SearchMediaView.swift */; };
-		0A6A9E8A2C24C79A004C5958 /* SearchMediaInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E892C24C79A004C5958 /* SearchMediaInteractor.swift */; };
-		0A6A9E8C2C24C7EE004C5958 /* SearchMediaPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E8B2C24C7EE004C5958 /* SearchMediaPresenterImpl.swift */; };
 		0A6A9E8E2C24C959004C5958 /* SearchMediaInteractorImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E8D2C24C959004C5958 /* SearchMediaInteractorImp.swift */; };
 		0A6A9E912C24DA53004C5958 /* Collection + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E902C24DA53004C5958 /* Collection + Extensions.swift */; };
 		0A6A9E932C25761E004C5958 /* SearchState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A9E922C25761E004C5958 /* SearchState.swift */; };
@@ -83,6 +83,9 @@
 /* Begin PBXFileReference section */
 		0A1A7CDF2C294C5A00AEED4A /* SearchMediaRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaRouter.swift; sourceTree = "<group>"; };
 		0A1A7CE12C294C6600AEED4A /* SearchMediaRouterImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaRouterImp.swift; sourceTree = "<group>"; };
+		0A1A7CE32C294CD200AEED4A /* SearchMediaAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaAssembly.swift; sourceTree = "<group>"; };
+		0A1A7CE52C294CE300AEED4A /* SearchMediaInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaInteractor.swift; sourceTree = "<group>"; };
+		0A1A7CE72C294CF600AEED4A /* SearchMediaPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaPresenterImpl.swift; sourceTree = "<group>"; };
 		0A6A9E062C246094004C5958 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		0A6A9E0F2C24C242004C5958 /* SearchMediaDetailsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaDetailsAssembly.swift; sourceTree = "<group>"; };
 		0A6A9E112C24C24C004C5958 /* SearchMediaDetailsAssemblyImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaDetailsAssemblyImpl.swift; sourceTree = "<group>"; };
@@ -96,13 +99,10 @@
 		0A6A9E222C24C349004C5958 /* SearchMediaDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaDetailsView.swift; sourceTree = "<group>"; };
 		0A6A9E242C24C355004C5958 /* SearchMediaDetailsViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaDetailsViewInput.swift; sourceTree = "<group>"; };
 		0A6A9E592C24C6FC004C5958 /* SearchMediaPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMediaPresenter.swift; sourceTree = "<group>"; };
-		0A6A9E6F2C24C73C004C5958 /* SearchMediaAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchMediaAssembly.swift; path = ../../../../../../.Trash/SearchMediaAssembly.swift; sourceTree = "<group>"; };
 		0A6A9E732C24C75D004C5958 /* SearchMediaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchMediaViewController.swift; path = ../SearchMediaViewController.swift; sourceTree = "<group>"; };
 		0A6A9E762C24C75D004C5958 /* SearchMediaAssemblyImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMediaAssemblyImpl.swift; sourceTree = "<group>"; };
 		0A6A9E772C24C75D004C5958 /* SearchMediaViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchMediaViewInput.swift; path = ../SearchMediaViewInput.swift; sourceTree = "<group>"; };
 		0A6A9E7C2C24C75D004C5958 /* SearchMediaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchMediaView.swift; path = ../SearchMediaView.swift; sourceTree = "<group>"; };
-		0A6A9E892C24C79A004C5958 /* SearchMediaInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchMediaInteractor.swift; path = ../../../../../../.Trash/SearchMediaInteractor.swift; sourceTree = "<group>"; };
-		0A6A9E8B2C24C7EE004C5958 /* SearchMediaPresenterImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchMediaPresenterImpl.swift; path = ../../../../../../.Trash/SearchMediaPresenterImpl.swift; sourceTree = "<group>"; };
 		0A6A9E8D2C24C959004C5958 /* SearchMediaInteractorImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMediaInteractorImp.swift; sourceTree = "<group>"; };
 		0A6A9E902C24DA53004C5958 /* Collection + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection + Extensions.swift"; sourceTree = "<group>"; };
 		0A6A9E922C25761E004C5958 /* SearchState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchState.swift; sourceTree = "<group>"; };
@@ -250,7 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				0A6A9E762C24C75D004C5958 /* SearchMediaAssemblyImpl.swift */,
-				0A6A9E6F2C24C73C004C5958 /* SearchMediaAssembly.swift */,
+				0A1A7CE32C294CD200AEED4A /* SearchMediaAssembly.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -259,7 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				0A6A9E8D2C24C959004C5958 /* SearchMediaInteractorImp.swift */,
-				0A6A9E892C24C79A004C5958 /* SearchMediaInteractor.swift */,
+				0A1A7CE52C294CE300AEED4A /* SearchMediaInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -267,9 +267,9 @@
 		0A6A9E5B2C24C6FC004C5958 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				0A6A9E8B2C24C7EE004C5958 /* SearchMediaPresenterImpl.swift */,
 				0A6A9E592C24C6FC004C5958 /* SearchMediaPresenter.swift */,
 				0A6A9ECC2C25A2B7004C5958 /* SearchCellType.swift */,
+				0A1A7CE72C294CF600AEED4A /* SearchMediaPresenterImpl.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -573,6 +573,7 @@
 				0A6A9E142C24C25E004C5958 /* SearchMediaDetailsInteractor.swift in Sources */,
 				0A6A9E912C24DA53004C5958 /* Collection + Extensions.swift in Sources */,
 				0A6A9ECF2C272F3B004C5958 /* SearchDetailsHyperLinkType.swift in Sources */,
+				0A1A7CE62C294CE300AEED4A /* SearchMediaInteractor.swift in Sources */,
 				0A6A9E162C24C29F004C5958 /* SearchMediaDetailsInteractorImpl.swift in Sources */,
 				D2FEDEFF2BC998FE003529B3 /* SearchResult.swift in Sources */,
 				D237932F2BC6B4EE00694576 /* AppCoordinator.swift in Sources */,
@@ -583,7 +584,6 @@
 				D23792FB2BC6A77200694576 /* SearchViewController.swift in Sources */,
 				0A6A9E832C24C75D004C5958 /* SearchMediaViewInput.swift in Sources */,
 				0A6A9E252C24C355004C5958 /* SearchMediaDetailsViewInput.swift in Sources */,
-				0A6A9E8C2C24C7EE004C5958 /* SearchMediaPresenterImpl.swift in Sources */,
 				0A6A9E932C25761E004C5958 /* SearchState.swift in Sources */,
 				D2FEDF0D2BCAC7C7003529B3 /* SearchDetailsDTO.swift in Sources */,
 				0A6A9E682C24C6FC004C5958 /* SearchMediaPresenter.swift in Sources */,
@@ -604,18 +604,18 @@
 				0A6A9E202C24C320004C5958 /* SearchMediaDetailsViewController.swift in Sources */,
 				0A6A9E232C24C349004C5958 /* SearchMediaDetailsView.swift in Sources */,
 				D2FEDF012BC999B0003529B3 /* SearchParams.swift in Sources */,
+				0A1A7CE82C294CF600AEED4A /* SearchMediaPresenterImpl.swift in Sources */,
 				D2FEDF112BCAC80B003529B3 /* SearchDetailsDomainModel.swift in Sources */,
-				0A6A9E8A2C24C79A004C5958 /* SearchMediaInteractor.swift in Sources */,
 				D237932A2BC6B39B00694576 /* SearchPresenter.swift in Sources */,
 				D237932D2BC6B47E00694576 /* SearchFlowFactory.swift in Sources */,
 				D2FEDF082BCAC6C5003529B3 /* SearchDetailsPresenter.swift in Sources */,
-				0A6A9E702C24C73C004C5958 /* SearchMediaAssembly.swift in Sources */,
 				D2FEDEF42BC7F7A2003529B3 /* SearchCollectionViewCell.swift in Sources */,
 				0A6A9E7F2C24C75D004C5958 /* SearchMediaViewController.swift in Sources */,
 				0A6A9E822C24C75D004C5958 /* SearchMediaAssemblyImpl.swift in Sources */,
 				D2FEDF032BC9BC35003529B3 /* ImagesProvider.swift in Sources */,
 				0A6A9ECD2C25A2B8004C5958 /* SearchCellType.swift in Sources */,
 				D23792F92BC6A77200694576 /* SceneDelegate.swift in Sources */,
+				0A1A7CE42C294CD200AEED4A /* SearchMediaAssembly.swift in Sources */,
 				D2FEDF0A2BCAC70A003529B3 /* SearchDetailsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
